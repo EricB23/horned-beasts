@@ -6,7 +6,7 @@ export default class HornedBeast extends Component {
       <>
         <h2>{this.props.title}</h2>
         <img alt="" src={this.props.image} />
-        <div>Horned Beast</div>
+        <title>Horned Beast</title>
         <p>{this.props.description}</p>
       </>
     );
