@@ -5,8 +5,12 @@ export default class HornedBeast extends Component {
     return (
       <>
         <h2>{this.props.title}</h2>
-        <img alt="" src={this.props.image} />
-        <title>Horned Beast</title>
+        <img
+          src={this.props.image}
+          alt={this.props.description}
+          title={this.props.title}
+        />
+
         <p>{this.props.description}</p>
       </>
     );
