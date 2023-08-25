@@ -8,22 +8,20 @@ export default class Gallery extends Component {
     this.state = {};
   }
   render() {
-    let url1 = data[0].image_url;
-    let url2 = data[1].image_url;
-    console.log(data);
     return (
       <>
         <div> Gallery </div>
-        <HornedBeast
-          description={data[0].description}
-          title={data[0].title}
-          image={url1}
-        />
-        <HornedBeast
-          description={data[1].description}
-          title={data[1].title}
-          image={url2}
-        />
+        {data.map((element) => (
+          <HornedBeast
+            description={element.description}
+            title={element.title}
+            image={element.image_url}
+            key={element._id}
+            handleOpen={this.props.handleOpen}
+            getBeast={this.props.getBeast}
+          />
+        ))}
+        ;
       </>
     );
   }

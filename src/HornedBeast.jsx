@@ -11,11 +11,18 @@ export default class HornedBeast extends Component {
   clickHandler = () => {
     this.setState({ clicks: this.state.clicks + '❤️' });
   };
+  modalHandler = () => {
+    this.props.getBeast({
+      title: this.props.title,
+      description: this.props.description,
+    });
+    this.props.handleOpen();
+  };
   render() {
     console.log(this.state.clicks.length);
     return (
       <>
-        <h2>{this.props.title}</h2>
+        <h2 onClick={this.modalHandler}>{this.props.title}</h2>
         <Image
           src={this.props.image}
           alt={this.props.description}
