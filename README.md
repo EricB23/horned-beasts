@@ -7,7 +7,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Lab 02 Feature Implementation
+## Lab 02 Feature Implementation
 
 Number and name of feature: Feature #1 Display Images
 
@@ -37,3 +37,15 @@ Start time: 6:15pm
 Finish time: 6:20pm
 
 Actual time needed to complete: 5 Min
+
+## Lab 03 Feature Implementation
+
+Number and name of feature: Display A Modal
+
+Estimate of time needed to complete: 2.5 Hours
+
+Start time: 6:45 pm
+
+Finish time: 8:30 pm
+
+Actual time needed to complete: 1 Hour, 45 Minutes.
