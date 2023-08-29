@@ -15,6 +15,7 @@ export default class HornedBeast extends Component {
     this.props.getBeast({
       title: this.props.title,
       description: this.props.description,
+      src: this.props.image,
     });
     this.props.handleOpen();
   };

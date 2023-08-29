@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Button, Modal, Card } from 'react-bootstrap';
 
 export default class SelectedBeast extends Component {
   render() {
@@ -9,7 +9,19 @@ export default class SelectedBeast extends Component {
           <Modal.Header closeButton>
             <Modal.Title>{this.props.Beast.title}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>{this.props.Beast.description}</Modal.Body>
+          <Modal.Body>
+            <Card bg="dark" text="light">
+              <Card.Img
+                variant="top"
+                alt={this.props.title}
+                src={this.props.Beast.src}
+              />
+              <Card.Body>
+                <Card.title>{this.props.Beast.title}</Card.title>
+                <Card.text>{this.props.Beast.description}</Card.text>
+              </Card.Body>
+            </Card>
+          </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={this.props.handleClose}>
               Close
